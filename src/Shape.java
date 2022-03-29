@@ -11,6 +11,8 @@ public class Shape
   // public constants
   public static final String RECTANGLE = "Rectangle"; // constant for rectangle
   public static final String OVAL = "Oval";           // constant for oval
+  public static final String ARC = "Arc";
+  public static final String LINE = "Line";
 
   // private instance variables
   private Color color; // color to draw shape in
@@ -24,7 +26,31 @@ public class Shape
     p1 = new Point();
     p2 = new Point();
   }
-  
+
+  public static String getRECTANGLE() {
+    return RECTANGLE;
+  }
+
+  public static String getOVAL() {
+    return OVAL;
+  }
+
+  public static String getARC() {
+    return ARC;
+  }
+
+  public static String getLINE() {
+    return LINE;
+  }
+
+  public Point getP1() {
+    return p1;
+  }
+
+  public Point getP2() {
+    return p2;
+  }
+
   public Color getColor()
   {
     return color;
